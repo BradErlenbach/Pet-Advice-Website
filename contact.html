@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="logo.png" alt="Paradigm Pet Professionals Logo" class="logo">
+        <nav class="topnav">
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="cats.html">Cats</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="birds.html">Birds</a>
+            <a href="contact.html" class="active">Contact</a>
+            <div class="search">
+                <input type="text" placeholder="Find something...">
+                <button type="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xkndqzpe" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="timezone">Time Zone:</label>
+                <select id="timezone" name="timezone" required>
+                    <option value="">Select Time Zone</option>
+                    <option value="UTC-12:00">UTC-12:00 International Date Line West</option>
+                    <option value="UTC-11:00">UTC-11:00 Coordinated Universal Time-11</option>
+                    <option value="UTC-10:00">UTC-10:00 Hawaii</option>
+                    <option value="UTC-09:00">UTC-09:00 Alaska</option>
+                    <option value="UTC-08:00">UTC-08:00 Pacific Time (US & Canada)</option>
+                    <option value="UTC-07:00">UTC-07:00 Mountain Time (US & Canada)</option>
+                    <option value="UTC-06:00">UTC-06:00 Central Time (US & Canada)</option>
+                    <option value="UTC-05:00">UTC-05:00 Eastern Time (US & Canada)</option>
+                    <option value="UTC-04:00">UTC-04:00 Atlantic Time (Canada)</option>
+                    <option value="UTC-03:30">UTC-03:30 Newfoundland</option>
+                    <option value="UTC-03:00">UTC-03:00 Brasilia, Greenland</option>
+                    <option value="UTC-02:00">UTC-02:00 Mid-Atlantic</option>
+                    <option value="UTC-01:00">UTC-01:00 Azores</option>
+                    <option value="UTC+00:00">UTC+00:00 London, Dublin, Lisbon</option>
+                    <option value="UTC+01:00">UTC+01:00 Berlin, Madrid, Paris, Rome, West Central Africa</option>
+                    <option value="UTC+02:00">UTC+02:00 Athens, Jerusalem, Cairo, Eastern Europe</option>
+                    <option value="UTC+03:00">UTC+03:00 Moscow, Kuwait, Riyadh, Nairobi</option>
+                    <option value="UTC+03:30">UTC+03:30 Tehran</option>
+                    <option value="UTC+04:00">UTC+04:00 Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                    <option value="UTC+04:30">UTC+04:30 Kabul</option>
+                    <option value="UTC+05:00">UTC+05:00 Ekaterinburg, Islamabad, Karachi</option>
+                    <option value="UTC+05:30">UTC+05:30 Chennai, Kolkata, Mumbai, New Delhi</option>
+                    <option value="UTC+05:45">UTC+05:45 Kathmandu</option>
+                    <option value="UTC+06:00">UTC+06:00 Astana, Dhaka</option>
+                    <option value="UTC+06:30">UTC+06:30 Yangon (Rangoon)</option>
+                    <option value="UTC+07:00">UTC+07:00 Bangkok, Hanoi, Jakarta</option>
+                    <option value="UTC+08:00">UTC+08:00 Beijing, Hong Kong, Singapore, Taipei</option>
+                    <option value="UTC+09:00">UTC+09:00 Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                    <option value="UTC+09:30">UTC+09:30 Adelaide, Darwin</option>
+                    <option value="UTC+10:00">UTC+10:00 Eastern Australia, Guam, Vladivostok</option>
+                    <option value="UTC+11:00">UTC+11:00 Magadan, Solomon Islands, New Caledonia</option>
+                    <option value="UTC+12:00">UTC+12:00 Fiji, Kamchatka, Marshall Is.</option>
+                    <option value="UTC+13:00">UTC+13:00 Nuku'alofa</option>
+                </select>
+                <br>
+                <label for="pet_name">Pet's Name:</label>
+                <input type="text" id="pet_name" name="pet_name" required>
+                <label for="pet_type">Pet Type:</label>
+                <input type="text" id="pet_type" name="pet_type" required>
+                <label for="pet_age">Pet Age:</label>
+                <input type="number" id="pet_age" name="pet_age" required>
+                <input type="submit" value="Request Consultation">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Evidence-based pet care advice for every pet lover.</p>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

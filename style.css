@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #676767;
+}
+
+h1,
+h2 {
+    color: #003B6D;
+
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li a {
+    color: #6699CC;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.header {
+    background-color: #003B6D;
+    color: #BDBDBD;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+}
+
+.topnav a {
+    color: #BDBDBD;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.topnav a:hover,
+.topnav a.active {
+    color: #FFFFFF;
+    background-color: #6699CC;
+}
+
+.search input[type="text"],
+.search button {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    background-color: #6699CC;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #003B6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6699CC;
+}
+
+
+footer {
+    background-color: #676767;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topnav a,
+    .search {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search input[type="text"],
+    .search button {
+        width: calc(100% - 12px);
+    }
+}
